@@ -1,6 +1,6 @@
-autocmd BufRead,BufNewFile *.log* setfiletype log
-autocmd BufRead,BufNewFile *.out* setfiletype log
-autocmd BufRead,BufNewFile *.INFO* setfiletype log
-autocmd BufRead,BufNewFile *.WARNING* setfiletype log
-autocmd BufRead,BufNewFile *.ERROR* setfiletype log
-autocmd BufRead,BufNewFile *.FATAL* setfiletype log
+autocmd BufRead,BufNewFile *.log* setfiletype nulog
+autocmd BufRead,BufNewFile *.out* setfiletype nulog
+autocmd BufRead,BufNewFile *.INFO* setfiletype nulog
+autocmd BufRead,BufNewFile *.WARNING* setfiletype nulog
+autocmd BufRead,BufNewFile *.ERROR* setfiletype nulog
+autocmd BufRead,BufNewFile *.FATAL* setfiletype nulog
