@@ -48,4 +48,4 @@ hi def link log_fail		ErrorMsg
 hi def link log_fatal		ErrorMsg
 
 
-let b:current_syntax = "log"
+let b:current_syntax = "nulog"
