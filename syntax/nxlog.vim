@@ -48,7 +48,7 @@ syn match cassandra 'Compacted to'
 syn match cassandra 'Invoking major compaction'
 syn match cassandra 'Completed flushing'
 syn match cassandra 'Enqueuing flush of Memtable'
-syn match cassandra 'is being marked completed and will be removed'
+syn match cassandra 'is being marked compacted and will be removed.'
 
 "genesis
 syn match genesis_start 'GENESIS START'
