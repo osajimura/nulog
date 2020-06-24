@@ -42,7 +42,13 @@ syn match stargate "Received health callback for \l*_\l*:"
 syn match acropolis_leader 'Acquired master leadership'
 
 "cassandra
-syn match cassandra_start 'Logging initialized'
+syn match cassandra 'Logging initialized'
+syn match cassandra 'Compacting'
+syn match cassandra 'Compacted to'
+syn match cassandra 'Invoking major compaction'
+syn match cassandra 'Completed flushing'
+syn match cassandra 'Enqueuing flush of Memtable'
+syn match cassandra 'is being marked completed and will be removed'
 
 "genesis
 syn match genesis_start 'GENESIS START'
@@ -66,19 +72,19 @@ syn match mac '\x\{1,2\}:\x\{1,2\}:\x\{1,2\}:\x\{1,2\}:\x\{1,2\}:\x\{1,2\}'
 
 "See https://github.com/morhetz/gruvbox for gruvbox color code or :highlight
 "for current settings
-hi def link stargate		GruvboxOrange
+hi def link stargate		    GruvboxOrange
+hi def link cassandra	        GruvboxOrangeBold
 hi def link acropolis_leader	GruvboxOrangeBold
-hi def link cassandra_start	GruvboxOrangeBold
-hi def link genesis_start	GruvboxOrangeBold
-hi def link ip			GruvboxAqua	
-hi def link uuid		GruvboxPurple
-hi def link mac			GruvboxOrange
-hi def link log_string		GruvboxGreen
-hi def link log_date		GruvboxBlueBold
-hi def link log_time		GruvboxBlue
-hi def link log_warning		GruvboxYellow
-hi def link log_error		GruvboxRed
-hi def link log_fail		ErrorMsg
-hi def link log_fatal		ErrorMsg
+hi def link genesis_start	    GruvboxOrangeBold
+hi def link ip			        GruvboxAqua	
+hi def link uuid		        GruvboxPurple
+hi def link mac			        GruvboxOrange
+hi def link log_string		    GruvboxGreen
+hi def link log_date		    GruvboxBlueBold
+hi def link log_time		    GruvboxBlue
+hi def link log_warning		    GruvboxYellow
+hi def link log_error		    GruvboxRed
+hi def link log_fail		    ErrorMsg
+hi def link log_fatal		    ErrorMsg
 
 let b:current_syntax = "nxlog"
